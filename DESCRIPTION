@@ -1,0 +1,29 @@
+Type: Package
+Package: Gadest
+Title: Global Analysis for Differential Expression of Single-cell
+    Transcriptome
+Version: 0.1.0
+Authors@R: 
+    person("Jianing", "Gao", , "gjn1106@mail.ustc.edu.cn", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-6599-2133"))
+Description: This package implements methods to: 1. Identify differential
+    expressed genes (DEGs) of scRNA-seq data between two condition via
+    linear mixed model; 2. Estimate the transcriptome shift across cell
+    types; 3. Summerise the DEGs to gene modules.
+License: MIT + file LICENSE
+Depends:
+    R (>= 4.0.0)
+Imports: 
+    dplyr,
+    entropy,
+    infotheo,
+    lme4,
+    magrittr,
+    parallel,
+    stats,
+    utils
+Suggests: 
+    Rmagic
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
